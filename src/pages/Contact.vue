@@ -86,7 +86,7 @@ export default {
   methods: {
     onSubmit() {
       const { name, email, phone, message } = this;
-      axios.post('http://localhost:1337/contacts', {
+      axios.post(GRIDSOME_API_URL + '/contacts', {
         name,
         email,
         phone,
